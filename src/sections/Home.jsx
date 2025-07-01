@@ -1,15 +1,11 @@
-import Navbar from "../Navbar";
 import LandingPage from "../LandingPage";
 import Content from "./Content";
-import Footer from "../Footer";
-
+import PageLayout from "../layouts/PageLayout";
 function Home() {
     return (
         <>
-            <Navbar />
             <LandingPage />
             <Content />
-            <Footer />
         </>
     );
 }
