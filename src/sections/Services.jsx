@@ -7,25 +7,26 @@ const Events = () => {
                 {/* Navbar and content on top */}
                 <div className="relative z-10">
                     <div className="flex flex-col items-center justify-center h-screen text-center px-4">
-                        <h1 className="text-6xl font-bold">Our Services</h1>
-                        <p className="text-lg mt-4 w-[600px]">
+                        <h1 className="text-4xl md:text-6xl font-bold">Our Services</h1>
+                        <p className="text-base md:text-lg mt-4 w-full md:w-[600px]">
                             Far far away, behind the word mountains, far from
                             the countries Vokalia and Consonantia, there live
                             the blind texts.
                         </p>
                     </div>
-                </div>{" "}
+                </div>
                 <div className="absolute inset-0 bg-black/40 z-0" />
             </div>
+
             <br />
-            <div>
-                <h1 className="font-extralight text-2xl">OUR SERVICES</h1>
+            <div className="px-4">
+                <h1 className="font-extralight text-xl md:text-2xl text-center">OUR SERVICES</h1>
                 <br />
-                <div className="flex justify-evenly">
-                    <div className="w-[25%]">
-                        <img src="/trekking.png" className="w-[100px]" alt="" />
-                        <h3 className="font-bold text-2xl">Trekking</h3>
-                        <p>
+                <div className="flex flex-col md:flex-row md:justify-evenly items-center gap-8">
+                    <div className="w-full md:w-[25%] text-center md:text-left">
+                        <img src="/trekking.png" className="w-[80px] md:w-[100px] mx-auto md:mx-0" alt="" />
+                        <h3 className="font-bold text-xl md:text-2xl">Trekking</h3>
+                        <p className="text-sm md:text-base">
                             Lorem, ipsum dolor sit amet consectetur adipisicing
                             elit. Fugiat fugit repellendus cumque doloremque
                             animi, dicta totam dolore minus, magnam culpa,
@@ -33,10 +34,10 @@ const Events = () => {
                             exercitationem magni numquam!
                         </p>
                     </div>
-                    <div className="w-[25%]">
-                        <img src="/map.png" className="w-[100px]" alt="" />
-                        <h3 className="font-bold text-2xl">Map</h3>
-                        <p>
+                    <div className="w-full md:w-[25%] text-center md:text-left">
+                        <img src="/map.png" className="w-[80px] md:w-[100px] mx-auto md:mx-0" alt="" />
+                        <h3 className="font-bold text-xl md:text-2xl">Map</h3>
+                        <p className="text-sm md:text-base">
                             Lorem, ipsum dolor sit amet consectetur adipisicing
                             elit. Fugiat fugit repellendus cumque doloremque
                             animi, dicta totam dolore minus, magnam culpa,
@@ -44,14 +45,10 @@ const Events = () => {
                             exercitationem magni numquam!
                         </p>
                     </div>
-                    <div className="w-[25%]">
-                        <img
-                            src="/suitcases.png"
-                            className="w-[100px]"
-                            alt=""
-                        />
-                        <h3 className="font-bold text-2xl">Suitcases</h3>
-                        <p>
+                    <div className="w-full md:w-[25%] text-center md:text-left">
+                        <img src="/suitcases.png" className="w-[80px] md:w-[100px] mx-auto md:mx-0" alt="" />
+                        <h3 className="font-bold text-xl md:text-2xl">Suitcases</h3>
+                        <p className="text-sm md:text-base">
                             Lorem, ipsum dolor sit amet consectetur adipisicing
                             elit. Fugiat fugit repellendus cumque doloremque
                             animi, dicta totam dolore minus, magnam culpa,
@@ -64,14 +61,14 @@ const Events = () => {
 
             <br />
 
-            <div className="p-[5rem] bg-gray-100">
-                <div className="flex justify-between">
-                    <div className="w-[35rem]">
-                        <img src="/whyus.webp" alt="" />
+            <div className="px-4 py-8 md:p-[5rem] bg-gray-100">
+                <div className="flex flex-col lg:flex-row gap-8 items-center">
+                    <div className="w-full lg:w-[35rem]">
+                        <img src="/whyus.webp" alt="" className="w-full rounded-lg" />
                     </div>
-                    <div className="w-[30rem] m-auto justify-center">
-                        <h1 className="text-2xl font-bold">Why Us</h1>
-                        <p>
+                    <div className="w-full lg:w-[30rem] m-auto text-center lg:text-left">
+                        <h1 className="text-xl md:text-2xl font-bold">Why Us</h1>
+                        <p className="text-sm md:text-base">
                             Far far away, behind the word mountains, far from
                             the countries Vokalia and Consonantia, there live
                             the blind texts. Separated they live in
