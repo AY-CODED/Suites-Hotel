@@ -40,25 +40,6 @@ function Navbar() {
                             Home
                         </NavLink>
                     </li>
-                    <li className="relative group">
-                        <span className="hover:text-orange-500 cursor-pointer">Rooms</span>
-                        <ul className="absolute left-0 top-full hidden group-hover:block bg-black text-white shadow-md p-2 space-y-1 z-10 w-[12rem] rounded-2xl">
-                            <li className="hover:text-orange-600 px-4 py-1">Standard Room</li>
-                            <li className="hover:text-orange-600 px-4 py-1">Family Room</li>
-                            <li className="hover:text-orange-600 px-4 py-1">Single Room</li>
-                            <li className="relative">
-                                <div className="group/region hover:text-orange-600 px-4 py-1">
-                                    Regions
-                                    <ul className="absolute left-full top-0 hidden group-hover/region:block bg-black text-white shadow-md p-2 space-y-1 z-20 w-[8rem] rounded-2xl">
-                                        <li className="hover:text-orange-600 px-4 py-1">America</li>
-                                        <li className="hover:text-orange-600 px-4 py-1">Europe</li>
-                                        <li className="hover:text-orange-600 px-4 py-1">Asia</li>
-                                        <li className="hover:text-orange-600 px-4 py-1">Africa</li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
                     <li>
                         <NavLink to="/events" className="hover:text-orange-500">
                             Services
