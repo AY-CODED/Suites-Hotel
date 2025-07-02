@@ -24,7 +24,14 @@ function Navbar() {
             }`}
         >
             <div className="flex justify-between items-center p-5">
-                <h1 className="font-bold text-xl">Suites</h1>
+                {/* Logo */}
+                <NavLink
+                    to="/"
+                    onClick={() => setMenuOpen(false)}
+                    className="font-bold text-xl hover:text-orange-500"
+                >
+                    Suites
+                </NavLink>
 
                 {/* Desktop Menu */}
                 <ul className="hidden md:flex gap-10 font-bold">
@@ -36,15 +43,9 @@ function Navbar() {
                     <li className="relative group">
                         <span className="hover:text-orange-500 cursor-pointer">Rooms</span>
                         <ul className="absolute left-0 top-full hidden group-hover:block bg-black text-white shadow-md p-2 space-y-1 z-10 w-[12rem] rounded-2xl">
-                            <li className="hover:text-orange-600 px-4 py-1">
-                                Standard Room
-                            </li>
-                            <li className="hover:text-orange-600 px-4 py-1">
-                                Family Room
-                            </li>
-                            <li className="hover:text-orange-600 px-4 py-1">
-                                Single Room
-                            </li>
+                            <li className="hover:text-orange-600 px-4 py-1">Standard Room</li>
+                            <li className="hover:text-orange-600 px-4 py-1">Family Room</li>
+                            <li className="hover:text-orange-600 px-4 py-1">Single Room</li>
                             <li className="relative">
                                 <div className="group/region hover:text-orange-600 px-4 py-1">
                                     Regions
